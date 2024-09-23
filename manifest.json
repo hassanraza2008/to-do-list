@@ -3,6 +3,7 @@
     "short_name": "ToDo",
     "start_url": "index.html",
     "display": "standalone",
+    "homepage": "https://hassanraza2008.github.io/to-do-list/",
     "background_color": "#ffffff",
     "theme_color": "#153677",
     "orientation": "portrait-primary",
