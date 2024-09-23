@@ -69,8 +69,10 @@ ul li {
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
-    user-select: none;
-    -webkit-user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Standard syntax */
     cursor: pointer;
     position: relative;
 }
