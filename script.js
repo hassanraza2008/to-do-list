@@ -42,4 +42,13 @@ function showTask() {
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
-showTask()
+showTask();
+
+if("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+        navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .then(res => console.log("service worker registered"))
+            .catch(err => console.log("service worker not registered", err));
+    });
+}
