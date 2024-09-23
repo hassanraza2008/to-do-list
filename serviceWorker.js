@@ -11,9 +11,9 @@ const assets = [
 ];
 
 self.addEventListener("install", installEvent => {
-   installEvent.waitUntil(
-    caches.open(staticToDoList).then(cache => {
-        cache.addAll(assets)
-    })
-   )
-});
+    installEvent.waitUntil(
+     caches.open(staticToDoList).then(cache => {
+         cache.addAll(assets)
+     })
+    )
+ });
